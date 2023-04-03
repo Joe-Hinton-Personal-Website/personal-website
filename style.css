@@ -1,0 +1,244 @@
+/* make pages responsive */
+/* set height and width of page(s) */
+/* create a persistent header and use globally */
+/* style index */
+/* style about */
+/* style portfolio */
+
+
+/*---------- applied across all pages ----------*/
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  p a:visited {
+    color: black;
+  }
+
+body { 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(196, 189, 175);
+  color: rgb(95, 55, 55);
+  font-family: 'Amatic SC', cursive;
+  }
+
+ h1 {
+  text-align: center;
+  font-size: 2.5rem;
+ }
+
+ 
+
+
+ /* header is made persistent by the fixed position.  */
+ header {
+  position: fixed;
+  height: 15em;
+  width: 100%;
+  background-image: url(img/header3.jpg);
+  background-size:cover;
+  background-position: center;
+  
+}
+
+ nav {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 4em;
+  
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem;
+  border-radius: 50%;
+  font-family: 'Amatic SC', cursive;
+  font-size: 3rem;
+  background-color: rgb(232, 228, 220);
+  color: rgb(140, 127, 110);
+
+}
+
+main {
+  margin-top: 15rem;
+}
+
+
+
+footer {
+  width: 100%;
+  background-color: rgb(143, 140, 133);
+  text-align: center;
+  font-size: 3em;
+  position: relative;
+  margin-top: auto;
+  bottom: 0;
+  
+}
+
+
+/*---------- index.html styles ----------*/
+  .mainIndex {
+  display: flex;
+  flex-direction:column;
+  height: 100%;
+  width: 100%;
+  border: blue solid 3px;
+  justify-content: space-even;
+
+}
+
+  .mainIndex ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 70%;
+  border: red 3px solid;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+
+  }
+
+  .indexImage {
+  height: 15rem;
+}
+
+#secret a {
+  text-align: center;
+  color: rgb(195, 189, 176);
+}
+
+/*---------- about.html styles ----------*/
+.mainAbout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 100%;
+}
+
+.mainAbout section {
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-evenly;
+  height: 100%;
+  min-width: 100%;
+}
+
+  /* positions Short Bio h5 to top of the parent box */
+#about-section1 {
+  display: flex;
+  justify-content:flex-start;
+  
+}
+
+#about-section1 p {
+  display: flex;
+  font-size: 1.25rem;
+  
+}
+
+
+.mainAbout h5 {
+  font-size: 2em;
+  text-align: center;
+  background-color: rgb(165, 160, 151);
+}
+
+.mainAbout section ul {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1em;
+  
+}
+
+.mainAbout section li {
+  margin-left: 25px;
+}
+
+.mainAbout section p {
+  margin: .5rem;
+}
+
+/*---------- portfolio.html styles ----------*/
+  
+  
+.mainPort {
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%; 
+  
+}
+
+.mainPort section  {
+  align-items: center;
+  width: 50%;
+}
+
+.mainPort section ul {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+  text-align: center;
+  height: 100%;
+  list-style-type: none;
+  font-size: 2em;
+ }
+
+.imgPort {
+  width: 25rem;
+}
+
+/* 
+a media query which applies responsive changes when 
+the max width of the browser is equal to or less than 800px
+
+citation: 
+https://www.w3schools.com/cssref/css3_pr_mediaquery.php
+*/
+@media (max-width: 800px) {
+  #portfolio h5 {
+    background-color: rgb(165, 160, 151);
+  }
+
+  .mainPort {
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100%;
+    background-color: rgb(100, 155, 32);
+    
+  }
+
+  .mainPort section {
+    width: 100%;
+  }
+
+  
+/* 000000 */
+  .imgPort {
+    height: 100%;
+    width: 100%;
+  }
+
+
+}
+
+
+
+
+
