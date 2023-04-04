@@ -1,0 +1,29 @@
+body {
+  background: linear-gradient(to bottom, #9999f9, #4d87ec);
+}
+
+h1 {
+  background-color: #7363f0;
+  color: #ffffff;
+  text-align: center;
+  border-radius:50%
+}
+
+h2 {
+  background-color: #7363f0;
+  color: #ffffff;
+  text-align: center;
+  border-radius:50%
+}
+
+.top img {
+  height: 800px;
+  width: 1200px;
+  border-radius: 5%;
+}
+
+.bottom img {
+  height: 800px;
+  width: 1200px;
+  border-radius: 5%;
+}

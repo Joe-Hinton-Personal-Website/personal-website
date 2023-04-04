@@ -1,0 +1,54 @@
+/* CSS reset (set size for page */
+/* Style HTML */
+/* Set size for vault image (background?) */
+/* Set background color */
+
+/* CSS reset */
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+   
+    
+/* sets the view height, positions elements within the body, 
+sets background color */
+body { 
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: black;
+}
+
+/* set width of header and center h1 */
+header {
+  width: 100%;
+  text-align: center;
+}
+
+/* set text color, font, size and add padding to push text down from top of the page  */
+h1 {
+  color: red;
+  font-family:cursive;
+  font-size: 5em;
+  padding: 10%;
+  
+  
+}
+
+/* set height of image and add border radius to smooth out the edges */
+main img {
+  height: 500px;
+  border-radius: 50%;
+  
+ 
+}
+
+
+
+
+
+
+

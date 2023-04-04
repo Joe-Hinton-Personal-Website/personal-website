@@ -1,0 +1,86 @@
+/* External CSS */
+
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* The above "CSS reset" was learned from the freecodecamp article at https://www.freecodecamp.org/news/html-page-width-height/ */
+
+body {
+  min-height: 100vh;
+}
+
+header {
+  position: relative;
+  left: 25%;
+  width: 50%;
+  text-align: center;
+  
+}
+
+section {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 20px 0 2px 100px;
+  border: solid #eac2d1 5px;
+  padding: 10px;
+  background-color: #d2c5d3;
+}
+
+/* adding margin to li brings the bullet points inside the section */
+li {
+  margin: 30px 
+}
+
+h1 {
+  background-color: #81adc8;
+  margin-bottom: 100px;
+}
+
+h2 {
+  position: relative;
+  width: 1170px;
+  padding: 10px;
+  margin: 100px;
+  background-color: #eac2d1;
+}
+
+h3 {
+  background-color: #f0f2ba;
+  text-align: center;
+}
+
+img {
+  width: 320px;
+  height: 320px;
+  margin: 10px 0 0 100px;
+  padding: 10px;
+  border: solid #eac2d1 5px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #81adc8;
+  color: white;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  display: flex;
+}
+
+.bottom {
+  display: flex;
+}
+
+

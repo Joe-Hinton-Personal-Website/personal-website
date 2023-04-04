@@ -1,0 +1,26 @@
+body {
+  background: linear-gradient(to left, #a6dcee, #7fb8f1, #00bfff);
+
+}
+
+h1 {
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size:5em;
+  text-decoration: underline;
+  color: rgb(152, 78, 52);
+  opacity: 70%;
+  text-align: center;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  height: 311px;
+  margin-top: 100px;
+}

@@ -1,0 +1,22 @@
+body {
+  text-align: center;
+  background-color: #6fe2f3;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  height: 400px;
+  width:fit-content;
+  margin-top: 100px;
+  border-radius: 50%;
+  transition: transform 1.3s ease-in-out;
+}
+
+
+img:hover {
+  border-radius: 0;
+  box-shadow: 50px 50px 50px #00b4a5c3;
+}
