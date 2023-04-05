@@ -80,8 +80,8 @@ footer {
   background-color: rgb(143, 140, 133);
   text-align: center;
   font-size: 3em;
-  position: relative;
-  margin-top: auto;
+  position: absolute;
+  margin-top: 100%;
   bottom: 0;
   
 }
@@ -181,7 +181,7 @@ footer {
   flex: 1 1 0;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 100%; 
+  min-width: 360px; 
   
 }
 
@@ -197,7 +197,7 @@ footer {
   text-align: center;
   height: 100%;
   list-style-type: none;
-  font-size: 2em;
+  font-size: 2rem;
  }
 
 .imgPort {
@@ -211,7 +211,7 @@ the max width of the browser is equal to or less than 800px
 citation: 
 https://www.w3schools.com/cssref/css3_pr_mediaquery.php
 */
-@media (max-width: 800px) {
+@media (max-width: 360px) {
   #portfolio h5 {
     background-color: rgb(165, 160, 151);
   }
@@ -220,7 +220,6 @@ https://www.w3schools.com/cssref/css3_pr_mediaquery.php
     flex-direction: column;
     justify-content: flex-start;
     min-height: 100%;
-    background-color: rgb(100, 155, 32);
     
   }
 
