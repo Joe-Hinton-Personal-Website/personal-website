@@ -18,6 +18,7 @@
 
 body { 
   min-height: 100vh;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -76,12 +77,11 @@ main {
 
 
 footer {
-  width: 100%;
-  background-color: rgb(143, 140, 133);
+  min-width: 100vw;
+  background-color: rgb(143, 140, 133, .3);
   text-align: center;
   font-size: 3em;
   position: absolute;
-  margin-top: 100%;
   bottom: 0;
   
 }
@@ -91,33 +91,32 @@ footer {
   .mainIndex {
   display: flex;
   flex-direction:column;
-  height: 100%;
-  width: 100%;
-  border: blue solid 3px;
-  justify-content: space-even;
-
+  min-height: 100vh;
+  min-width: 100vw;
+  border: rgb(13, 0, 255) solid 3px;
+  justify-content: space-around;
 }
 
   .mainIndex ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  height: 70%;
+  height: 100%;
   border: red 3px solid;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   list-style-type: none;
+}
 
+  .mainIndex li{
+    padding: 0;
+    margin: 0;
   }
 
   .indexImage {
   height: 15rem;
 }
 
-#secret a {
-  text-align: center;
-  color: rgb(195, 189, 176);
-}
 
 /*---------- about.html styles ----------*/
 .mainAbout {
@@ -179,21 +178,23 @@ footer {
 .mainPort {
   display: flex;
   flex: 1 1 0;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
   min-width: 360px; 
   
 }
 
 .mainPort section  {
+  display: flex;
+  border: red 3px solid;
   align-items: center;
   width: 50%;
 }
 
 .mainPort section ul {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content:space-evenly;
+  justify-content:space-evenly; */
   text-align: center;
   height: 100%;
   list-style-type: none;
@@ -204,17 +205,37 @@ footer {
   width: 25rem;
 }
 
-/* 
-a media query which applies responsive changes when 
-the max width of the browser is equal to or less than 800px
+.container-port-footer {
 
-citation: 
-https://www.w3schools.com/cssref/css3_pr_mediaquery.php
-*/
+  position: relative;
+  min-width: 100%;
+}
+
+.port-footer {
+  position: absolute;
+  border: red 3px solid;
+  
+}
+
+/* -----Portfolio2----- */
+
+.port-container {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+  height: 100vh;
+  min-width: 100vw;
+  border: red solid 3px;
+}
+
+.port-container img {
+  height: 3rem;
+}
+
+
+/* Portfolio media queries */
 @media (max-width: 360px) {
-  #portfolio h5 {
-    background-color: rgb(165, 160, 151);
-  }
+  
 
   .mainPort {
     flex-direction: column;
@@ -228,7 +249,7 @@ https://www.w3schools.com/cssref/css3_pr_mediaquery.php
   }
 
   
-/* 000000 */
+
   .imgPort {
     height: 100%;
     width: 100%;
