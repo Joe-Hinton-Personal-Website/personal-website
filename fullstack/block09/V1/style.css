@@ -219,8 +219,9 @@ footer {
 
 /* -----Portfolio2----- */
 
-.port-container {
+.port-box {
   display: grid;
+  gap: 1.5rem;
 
   grid-template-columns: repeat(4, 1fr);
   height: 100vh;
