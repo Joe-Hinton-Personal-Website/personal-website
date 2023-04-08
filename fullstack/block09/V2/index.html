@@ -2,6 +2,9 @@
   -create six grid container child elements
   -link a fancy font to use for my name (more if desired)
   -link to other pages in a nav element
+  -make the nav element a hamburger menu and put it 
+    in the top right corner
+  -
 -->
 
 
@@ -14,20 +17,29 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Tangerine">
-  <title>Personal Website</title>
+  <!-- hamburger menu icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+          <title>Personal Website</title>
 </head>
 <body>
   <main class="container">
     <div class="wrapper">
-      <header class="main-head">Joseph Hinton</header>
+      <header class="main-head col-span2">Joseph Hinton</header>
+      
       <nav class="main-nav">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
+
+        <ul class="mainMenu">
+          <li><a class="menuItem" href="index.html">Home</a></li>
+          <li><a class="menuItem" href=""></a>About</li>
+          <li><a class="menuItem" href=""></a>Portfolio</li>
+          <li><a class="menuItem" href=""></a>Contact</li>
         </ul>
+        <button class="hamburger">
+          <i class="menuIcon material-icons">menu</i>
+          <i class="closeIcon material-icons">close</i>
+        </button>
       </nav>
+
       <article class="content">
         <h2>Main article area</h2>
         <p>
@@ -42,5 +54,6 @@
     
     
   </main>
+  <script src="javascript.js"></script>
 </body>
 </html>
