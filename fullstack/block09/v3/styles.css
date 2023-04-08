@@ -15,10 +15,14 @@ body {
   grid-column: span 4;
 }
 
+.row-span4 {
+  grid-row: span 4;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+
   justify-content: center;
   align-content: space-between;
   height: 100vh;
@@ -28,6 +32,9 @@ body {
 
 .article1 {
   border: red solid 3px;
+  font-family: 'Tangerine', serif;
+  text-align: center;
+  font-size: 3rem;
 }
 
 .article2 {
