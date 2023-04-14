@@ -3,6 +3,7 @@
 screen sizes */
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 
@@ -54,7 +55,8 @@ body {
   text-align: center;
   font-size: 3rem;
   padding: 15px;
-  height: 3rem;
+  height: 5rem;
+  border: red 3px solid;
   
 }
 
@@ -65,11 +67,12 @@ body {
   /* border: rgb(147, 117, 212) solid 3px; */
   background-color: #d6c9c9;
   grid-column: 1/5;
-  grid-row: 2/3;
+  grid-row: 3/3;
   color: white;
   /* margin-top: -3.2rem; */
-  margin-top: -50px;
+  margin-top: -88px;
   max-height: 3rem;
+  border: red 3px solid;
 }
 
 .article2 a{
@@ -107,7 +110,7 @@ display: none;
 }
 
 .article4 img {
-  max-height: 11rem;
+  max-height: 15rem;
   border-radius: 50% / 30%;
   padding: 2rem;
  
@@ -127,7 +130,7 @@ display: none;
   align-items: center;
   /* border: red solid 3px; */
   grid-column: 1/5;
-  grid-row: 7/8;
+  grid-row: 8;
 
 }
 
@@ -142,9 +145,7 @@ display: none;
   min-width: 16rem;
   margin-left: 60px;
   font-family: 'Caveat', serif;
-  font-size: x-large
-
-
+  font-size: x-large;
 }
 
 .article6 img {
