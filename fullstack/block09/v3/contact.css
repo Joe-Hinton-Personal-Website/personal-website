@@ -69,7 +69,8 @@
 }
 
 #message {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   transform: translate(40px, 10px);
   border-radius: 5px;
   height: 100px;
