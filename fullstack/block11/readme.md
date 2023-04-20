@@ -1,0 +1,1 @@
+Note: there is nothing to submit for this workshop but you will have to submit proof of project collaboration as part of your Personal Website Pt II submission. 
