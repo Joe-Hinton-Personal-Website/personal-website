@@ -1,0 +1,166 @@
+/* 
+-use media queries to set breakpoints for common 
+screen sizes */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+
+body {
+
+  background-image: url(../img/laptop-background.jpg);
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+ 
+
+
+.col-span3 {
+  grid-column: span 3;
+}
+
+.col-span4 {
+  grid-column: span 4;
+}
+
+.row-span4 {
+  grid-row: span 4;
+}
+
+.index-grid-container {
+  display: grid;
+  min-width: 100vw;
+  color: white;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+
+.name {
+  background-color: #d95d39;
+  font-family: 'Tangerine', serif;
+  text-shadow: 4px 4px 4px #000000;  
+  text-align: center;
+  font-size: 3rem;
+  padding: 15px;
+  height: 5rem;
+
+  
+}
+
+.index-nav-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #d6c9c9;
+  max-height: 3rem;
+  transform: translate(0, -165px);
+
+ 
+}
+
+.index-nav-bar a{
+  font-weight: bolder;
+}
+
+.index-nav-bar a:link {
+  color: rgb(18, 181, 230);
+}
+
+.index-nav-bar a:visited {
+  color:rgb(18, 181, 230)
+}
+.index-nav-bar a:hover {
+  color: rgb(188, 87, 183);
+}
+
+
+
+
+
+
+.index-sidebar {
+display: none;
+
+}
+
+.index-content {
+  display: flex;
+  justify-content: center;
+  transform: translate(0, -300px);
+  
+  grid-column: 1/5;
+
+  
+  
+}
+
+.index-content img {
+  max-height: 15rem;
+  border-radius: 50% / 30%;
+  padding: 2rem;
+ 
+ 
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-row: 10;
+}
+
+.index-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(0, -200px);
+  
+}
+
+.index-button button{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #279af1;
+  color: white;
+  min-height: 3rem;
+  min-width: 16rem;
+  margin-left: 60px;
+  font-family: 'Caveat', serif;
+  font-size: x-large;
+}
+
+.index-button img {
+  max-height: 50px;
+  position: relative;
+  right: 60px;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+.index-content {
+  grid-column: 0/5;
+}
+}
+
+@media screen and (min-width: 1080px) {
+  
+  .index-content {
+    grid-column: 3/5;
+  }
+
+  .index-sidebar {
+    display: block;
+    grid-column: 1/3;
+  }
+
+  
+}

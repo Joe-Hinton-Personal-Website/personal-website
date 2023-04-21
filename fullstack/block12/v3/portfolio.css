@@ -1,0 +1,41 @@
+.port-grid-container {
+  color: white;
+  display: grid;
+  grid-template-rows: 1fr 1fr 8fr 1fr;
+  /* gap: 20px; */
+  border: red soilid 3px;
+}
+
+.port-nav-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #d6c9c9;
+  max-height: 3rem;
+  border: red 3px solid;
+  grid-column: span 4;
+  /* transform: translate(0, -70px); */
+}
+
+.port-nav-bar a{
+  font-weight: bolder;
+}
+
+.port-nav-bar a:link {
+  color: rgb(18, 181, 230);
+}
+
+.port-nav-bar a:visited {
+  color:rgb(18, 181, 230)
+}
+.port-nav-bar a:hover {
+  color: rgb(188, 87, 183);
+}
+
+.port-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  grid-column: span 4;
+  border: red solid 3px;
+}
