@@ -40,24 +40,20 @@
 // for (let  i = 0; i < word.length; i++) {
 
 // }
-
-// let word = "Hello";
 // const vowels = ["a", "e", "i", "o", "u"];
 
 // let word ="hello";
 // let consonantCount = 0;
 // let vowelCount = 0;
-// const vowels = "aeiou"
 // for (let i =0; i < word.length; i++) {
 //   let currentChar = word[i];
 //   if (vowels.includes(currentChar)) {
-//     vowelsCount++;
+//     vowelCount++;
 //   } else {
-//     consonantsCount++
-// ;  }
+//     consonantCount++;  }
 //   }
 
-// console.log(vowelsCount);
+// console.log(consonantCount);
 
 
 
@@ -76,9 +72,23 @@
 -console.log result
 */
 
-let numbers = [1, 2, 3, 4, 5];
-let reverseNumbers = numbers.reverse();
-console.log(reverseNumbers);
+// let reverseNumber = [];
+// let numbers = [1, 2, 3, 4, 5];
+
+// for (i = numbers.length - 1; i >= 0; i--) {
+//   reverseNumber.push(numbers[i]);
+// }
+// console.log(reverseNumber);
+// let reverseNumbers = numbers.reverse();
+
+
+
+/*This does not work because numbers are not pushed into 
+an array */
+
+// let number = [1, 2, 3, 4, 5];
+// let reverseNumber = [];
+// for (let i = number.length - 1; i>= 0; i--)
 
 
 
