@@ -34,9 +34,8 @@
   align-items: center;
   background-color: #d6c9c9;
   max-height: 3rem;
-  border: red 3px solid;
   grid-column: span 4;
-  transform: translate(0, -70px);
+  transform: translate(0, -73px);
 }
 
 .about-nav-bar a{
